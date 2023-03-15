@@ -1,14 +1,30 @@
 .team-card {
     margin-bottom: 1em;
+    display: flex;
 }
 
 .team-card__img {
     border-radius: 3em;
-    box-shadow: 3px 6px blue;
+    box-shadow: 10px 5px blue;
     margin-left: auto;
     margin-right: auto;
     display: block;
     padding: 1em;
     background-color: dodgerblue;
-    max-width: 10em
+    max-width: 10em;
+    max-height: 10em;
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+.team-card__img:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-5px) translateX(-5px); }
+    100% { transform: translateY(0); }
 }

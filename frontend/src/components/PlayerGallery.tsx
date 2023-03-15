@@ -1,8 +1,6 @@
-import {PlayerCard} from "./PlayerCard";
+import '../stylesheets/PlayerGallery.css'
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
-import {futimes} from "fs";
-import {Team} from "./TeamsGallery";
 
 interface PlayerGalleryProps {
     teamId: string
@@ -34,12 +32,15 @@ const PlayerGallery = (props: PlayerGalleryProps) => {
                 })
                 setPlayers(playersToAdd)
             });
-    }, []);
+    }, [props.teamId]);
 
-    return(
-        <div>
-            {players.map((it, index) =>
-                <div key={index} onClick={event => handleClick(event, it)}>{it.name}</div>)}
+    return (
+        <div className='player-gallery'>
+            <img className='player-gallery__logo' src={require('../images/logo.png')}/>
+            <div className='player-gallery__container'> {players.map((it, index) =>
+                <div className='player-gallery__name' key={index}
+                     onClick={event => handleClick(event, it)}>{it.name}</div>)}
+            </div>
         </div>
     )
 }

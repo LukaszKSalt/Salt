@@ -60,8 +60,6 @@ INSERT INTO public.team (id, name, team_logo_url) VALUES ('134303', 'SC Cambuur'
 INSERT INTO public.team (id, name, team_logo_url) VALUES ('133759', 'SC Heerenveen', 'https://www.thesportsdb.com/images/media/team/badge/surtsx1473534841.png');
 INSERT INTO public.team (id, name, team_logo_url) VALUES ('133866', 'Sparta', 'https://www.thesportsdb.com/images/media/team/badge/upluv31586362224.png');
 INSERT INTO public.team (id, name, team_logo_url) VALUES ('133770', 'Vitesse', 'https://www.thesportsdb.com/images/media/team/badge/wrptxp1473534864.png');
-
-
 --
 -- TOC entry 3178 (class 2606 OID 24618)
 -- Name: team team_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres

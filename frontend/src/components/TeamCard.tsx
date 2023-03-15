@@ -1,6 +1,6 @@
 import {Team} from "./TeamsGallery";
 import '../stylesheets/TeamCard.css'
-import {Navigate, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 
 interface TeamCardProps {

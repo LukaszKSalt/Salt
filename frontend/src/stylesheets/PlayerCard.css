@@ -1,4 +1,34 @@
-img {
+.player-card__logo {
+    max-width: 20em;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+    border-radius: 1em;
+}
+
+.player-card__img {
+    max-width: 20em;
+    display: block;
+    border-radius: 10em;
+    margin: 2em auto;
+    color: grey;
+    background: linear-gradient(100deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%) no-repeat;
+}
+
+.player-card__container {
+    text-align: center;
+}
+
+p {
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    background-color: dodgerblue;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
 }

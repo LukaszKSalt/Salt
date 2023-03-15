@@ -1,0 +1,55 @@
+.player-gallery__logo {
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 1em;
+}
+
+.player-gallery__name {
+    color: whitesmoke;
+    overflow: auto;
+    min-width: 10em;
+    font-size: x-large;
+    max-width: 10em;
+    border-radius: 3em;
+    box-shadow: 10px 5px blue;
+    display: block;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: dodgerblue;
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+.player-gallery__name:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-5px) translateX(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@media (min-width: 700px) {
+    .player-gallery__container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .player-gallery__container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
