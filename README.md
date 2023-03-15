@@ -10,6 +10,7 @@ Footballers API is a web application that allows users to browse football teams 
 - PostgreSQL
 - JPA
 - Spring starter web
+- Docker
 ## Getting Started
 - Clone the repository: git clone https://github.com/LukaszKSalt/Salt.git
 - CD into /Backend, build project with Maven, in terminal write 'docker compose up' (docker desktop is necessary)
